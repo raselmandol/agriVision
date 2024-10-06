@@ -33,14 +33,47 @@ Follow the steps below to set up and run the **AgriVision** web and mobile appli
    cd AgriVision
    ```
 
-2. **Install Dependencies**:
-   Install the necessary packages using npm:
+2. **Install**:
+   Follow this if you are using aws ec2
    ```bash
-   npm install
+   sudo apt-get update
+   sudo apt-get upgrade
+
    ```
+   Install Django and Other Deps
+   ```bash
+   sudo apt-get install python3-pip python3-dev libpq-dev postgresql postgresql-contrib nginx curl
+   sudo apt-get upgrade
+   sudo apt-get install python3-venv
+   
+   ```
+   Navigate to your home directory or wherever you want to create your Django project:
 
+   ```bash
+   cd ~
+   ```
+   Create a virtual environment. Replace venv with your preferred name for the environment:
 
-
+   ```bash
+   python3 -m venv myenv
+   ```
+   Activate the virtual environment:
+   ```bash
+   source myenv/bin/activate
+   ```
+   Install Django and Requests
+   ```bash
+   source myenv/bin/activate
+   ```
+   Create Django Project
+   ```bash
+   django-admin startproject agriVision
+   cd agriVision
+   python3 manage.py startapp dashboard
+   ```
+3. **Setup-i**:
+   Follow [setup-doc](https://github.com/raselmandol/agriVision/SETUP.md) to install agriVision on aws ec2(Ubuntu).
+   
 ---
 
 ### Additional Setup Requirements
@@ -51,11 +84,11 @@ Follow the steps below to set up and run the **AgriVision** web and mobile appli
 
 ## Technologies Used
 
-- **Framework**: Django
-- **Frontend**: HTML, CSS, Javascript
-- **Backend**: Python (Django)
-- **Machine Learning**: TensorFlow, Scikit-learn (for trend forecasting and yield predictions)
-- **API**:
+- **Framework-web**: Django
+- **Frontend-web**: HTML, CSS, Javascript
+- **Backend-web**: Python (Django)
+- **Machine Learning(Prediction)**: TensorFlow, Scikit-learn (for trend forecasting and yield predictions)
+- **APIs**: OpenWeather, api.NASA, NASA Open APIs
 
 ---
 
