@@ -53,7 +53,7 @@ Follow the steps below to set up and run the **AgriVision** web and mobile appli
 
 - **Framework**: Django
 - **Frontend**: HTML, CSS, Javascript
-- **Backend**: Python
+- **Backend**: Python (Django)
 - **Machine Learning**: TensorFlow, Scikit-learn (for trend forecasting and yield predictions)
 - **API**:
 
