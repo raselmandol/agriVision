@@ -61,9 +61,9 @@ Follow the steps below to set up and run the **AgriVision** web and mobile appli
    ```bash
    source myenv/bin/activate
    ```
-   Install Django and Requests
+   Install Django and Requests and OLs
    ```bash
-   source myenv/bin/activate
+   sudo apt-get install python3-pip python3-dev libpq-dev postgresql postgresql-contrib nginx curl
    ```
    Create Django Project
    ```bash
